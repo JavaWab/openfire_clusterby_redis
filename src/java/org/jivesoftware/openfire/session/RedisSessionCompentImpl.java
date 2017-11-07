@@ -43,6 +43,7 @@ public class RedisSessionCompentImpl implements RedisSessionCompent {
             jedis.hset("UserSession:" + route.toBareJID(), route.getResource(), jid);
         }
         jedis.close();
+
     }
 
     @Override
